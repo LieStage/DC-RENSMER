@@ -24,9 +24,9 @@ async def cb_handlers(c: Client, cb: "types.CallbackQuery"):
             await cb.answer("You didn't set any custom thumbnail!", show_alert=True)
         else:
             await cb.answer()
-            await c.send_photo(cb.message.chat.id, thumbnail, "Custom Thumbnail",
+            await c.send_photo(cb.message.chat.id, thumbnail, "ᑕᑌᔑᎢᝪᗰ ᎢᕼᑌᗰᗷᑎᗩᏆᏞ",
                                reply_markup=types.InlineKeyboardMarkup([[
-                                   types.InlineKeyboardButton("Delete Thumbnail",
+                                   types.InlineKeyboardButton("ᗞᗴᏞᗴᎢᗴ ᎢᕼᑌᗰᗷᑎᗩᏆᏞ",
                                                               callback_data="deleteThumbnail")
                                ]]))
     elif cb.data == "deleteThumbnail":
@@ -46,7 +46,7 @@ async def cb_handlers(c: Client, cb: "types.CallbackQuery"):
             await cb.message.edit("Okay!\n"
                                   "Now I will apply this thumbnail to next uploads.",
                                   reply_markup=types.InlineKeyboardMarkup(
-                                      [[types.InlineKeyboardButton("Show Settings",
+                                      [[types.InlineKeyboardButton("ᔑᗴᎢᎢᏆᑎᏀᔑ",
                                                                    callback_data="showSettings")]]
                                   ))
     elif cb.data == "setCustomCaption":
