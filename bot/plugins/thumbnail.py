@@ -17,7 +17,7 @@ async def show_thumbnail(c: Client, m: "types.Message"):
         return await m.reply_text("You didn't set custom thumbnail!")
     await c.send_photo(m.chat.id, thumbnail, caption="Custom Thumbnail",
                        reply_markup=types.InlineKeyboardMarkup(
-                           [[types.InlineKeyboardButton("Delete Thumbnail",
+                           [[types.InlineKeyboardButton("ᗞᗴᏞᗴᎢᗴ ᎢᕼᑌᗰᗷᑎᗩᏆᏞ",
                                                         callback_data="deleteThumbnail")]]
                        ))
 
@@ -33,7 +33,7 @@ async def set_thumbnail(c: Client, m: "types.Message"):
     await m.reply_text("Okay,\n"
                        "I will use this image as custom thumbnail.",
                        reply_markup=types.InlineKeyboardMarkup(
-                           [[types.InlineKeyboardButton("Delete Thumbnail",
+                           [[types.InlineKeyboardButton("ᗞᗴᏞᗴᎢᗴ ᎢᕼᑌᗰᗷᑎᗩᏆᏞ",
                                                         callback_data="deleteThumbnail")]]
                        ))
 
