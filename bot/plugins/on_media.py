@@ -19,11 +19,10 @@ async def on_media_handler(c: Client, m: "types.Message"):
     await asyncio.sleep(3)
     await c.send_flooded_message(
         chat_id=m.chat.id,
-        text="**Should I show File Information?**",
+        text="**Should I show File Information?\n reply the document/video with __/rename__**",
         reply_markup=types.InlineKeyboardMarkup(
             [[types.InlineKeyboardButton("Yes", callback_data="showFileInfo"),
-              types.InlineKeyboardButton("No", callback_data="closeMessage"),
-              types.InlineKeyboardButton("Rename",callback_data="rename")]]
+              types.InlineKeyboardButton("No", callback_data="closeMessage")]]
         ),
         disable_web_page_preview=True,
         reply_to_message_id=m.message_id
