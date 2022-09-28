@@ -38,7 +38,7 @@ Press Below Button to Deploy!
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TRUMBOTS/DcRename-1)
 
 
-#HEROKU MANDATORY VARIABLES
+##HEROKU MANDATORY VARIABLES
 ```
 API_ID
 API_HASH
