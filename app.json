@@ -41,7 +41,7 @@
         },
         "PRO_USERS": {
             "description": "Don't Change",
-            "required ": false,
+            "required": false,
             "value": "945284066"
         }
     },
