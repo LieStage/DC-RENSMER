@@ -1,3 +1,5 @@
+## NOTE : IT'S PRIVATE USE BOT 🚨
+
 # Rename-Bot
 This is a very simple Telegram Files Rename Bot by [@FLIGHER](https://t.me/Fligher).
 
