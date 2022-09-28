@@ -35,6 +35,16 @@ Easy to Deploy to Heroku.
 
 Press Below Button to Deploy!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RaOnw/DcRename)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TRUMBOTS/DcRename-1)
 
 
+#HEROKU MANDATORY VARIABLES
+```
+API_ID
+API_HASH
+BOT_TOKEN
+MONGODB_URI
+LOG_CHANNEL
+```
+
+#Note IT'S A PRIVATE USE BOT ONLY
