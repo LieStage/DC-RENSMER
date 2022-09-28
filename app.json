@@ -39,10 +39,10 @@
         "OWNER_ID": {
             "description": "Bot Owner UserID"
         },
-        "PRO_USERS":{
-            "description": "Don't Change"
-            "required ":false,
-            "value":"945284066"
+        "PRO_USERS": {
+            "description": "Don't Change",
+            "required ": false,
+            "value": "945284066"
         }
     },
     "buildpacks": [ 
