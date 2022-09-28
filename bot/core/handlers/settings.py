@@ -25,7 +25,7 @@ async def show_settings(m: "types.Message"):
                                     callback_data="triggerApplyDefaultCaption")],
         [types.InlineKeyboardButton("ᔑᗴᎢ ᑕᑌᔑᎢᝪᗰ ᑕᗩᑭᎢᏆᝪᑎ",
                                     callback_data="setCustomCaption")],
-        [types.InlineKeyboardButton(f"{'ᑕᕼᗩᑎᏀᗴ' if thumbnail else 'Set'} ᎢᕼᑌᗰᗷᑎᗩᏆᏞ",
+        [types.InlineKeyboardButton(f"{'ᑕᕼᗩᑎᏀᗴ' if thumbnail else 'ᔑᗴᎢ'} ᎢᕼᑌᗰᗷᑎᗩᏆᏞ",
                                     callback_data="setThumbnail")]
     ]
     if thumbnail:
@@ -39,7 +39,7 @@ async def show_settings(m: "types.Message"):
 
     try:
         await m.edit(
-            text="**Here you can setup your settings:**",
+            text="**𝙃𝙄 𝘿𝙐𝙀𝘿 😜 𝘾𝙇𝙄𝘾𝙆 𝙏𝙃𝙀 𝘽𝙀𝙇𝙊𝙒 𝘽𝙐𝙏𝙏𝙊𝙉𝙎⏹ 𝙏𝙊 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝙀🪛 𝙔𝙊𝙐𝙍 𝙎𝙀𝙏𝙏𝙄𝙉𝙂𝙎 ⚙\n\n 𝙃𝙚𝙧𝙚 𝙮𝙤𝙪 𝙘𝙖𝙣 𝙨𝙚𝙩𝙪𝙥 𝙮𝙤𝙪𝙧 𝙨𝙚𝙩𝙩𝙞𝙣𝙜𝙨:\n\n 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎 🌟\n𝘿𝙀𝙁𝘼𝙐𝙇𝙏 𝘾𝘼𝙋𝙏𝙄𝙊𝙉📝\n𝘾𝙐𝙎𝙏𝙊𝙈 𝘾𝘼𝙋𝙏𝙄𝙊𝙉✏️\n𝙏𝙃𝙐𝙈𝘽𝙉𝘼𝙄𝙇🏙\n𝙁𝙄𝙇𝙀 📁/ 𝙑𝙄𝘿𝙀𝙊 🎞**",
             reply_markup=types.InlineKeyboardMarkup(buttons_markup),
             disable_web_page_preview=True,
             parse_mode="Markdown"
