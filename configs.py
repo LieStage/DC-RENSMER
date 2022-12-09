@@ -23,4 +23,4 @@ class Config(object):
     MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://video:merge@cluster0.km7eaiw.mongodb.net/?retryWrites=true&w=majority")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001539366814"))
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
-    PORT = int(os.environ.get('PORT',"8080"))
+    
