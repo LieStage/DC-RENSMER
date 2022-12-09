@@ -6,7 +6,7 @@ from pyrogram import Client as RawClient
 from pyrogram.storage import Storage
 from configs import Config
 from bot.core.new import New
-from __init__ import web_server
+from bot.router import web_server
 from aiohttp import web
 from configs import PORT
 
