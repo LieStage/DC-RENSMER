@@ -8,7 +8,6 @@ from configs import Config
 from bot.core.new import New
 from bot.router import web_server
 from aiohttp import web
-from bot.config import PORT
 
 
 LOGGER = Config.LOGGER
@@ -37,7 +36,7 @@ class Client(RawClient, New):
 
         bind_address = "0.0.0.0"
 
-        await web.TCPSite(app, bind_address, PORT).start()
+        await web.TCPSite(app, bind_address,"8080").start()
 
     async def stop(self, *args):
         await super().stop()
