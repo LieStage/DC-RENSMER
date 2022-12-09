@@ -8,7 +8,7 @@ from configs import Config
 from bot.core.new import New
 from bot.router import web_server
 from aiohttp import web
-from configs import PORT
+from bot.config import PORT
 
 
 LOGGER = Config.LOGGER
