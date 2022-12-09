@@ -10,5 +10,4 @@ logging.basicConfig(
 
 
 class Config(object):
-
-PORT = int
+          PORT = int(os.environ.get('PORT',"8080"))
