@@ -6,6 +6,11 @@ from pyrogram import Client as RawClient
 from pyrogram.storage import Storage
 from configs import Config
 from bot.core.new import New
+from plugins import web_server
+
+from aiohttp import web
+
+
 
 LOGGER = Config.LOGGER
 log = LOGGER.getLogger(__name__)
@@ -27,7 +32,13 @@ class Client(RawClient, New):
 
     async def start(self):
         await super().start()
-        log.info("Bot Started!")
+        app = web.AppRunner(await web_server())
+
+        await app.setup()
+
+        bind_address = "0.0.0.0"
+
+        await web.TCPSite(app, bind_address, PORT).start()
 
     async def stop(self, *args):
         await super().stop()
