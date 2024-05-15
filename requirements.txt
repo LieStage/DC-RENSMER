@@ -10,3 +10,4 @@ mutagen
 psutil
 aiofiles
 aiohttp
+requests
